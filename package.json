@@ -1,0 +1,16 @@
+{
+  "name": "hello-reason",
+  "version": "0.1.0",
+  "description": "Reason workflow with Esy",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/ppx_let": "*",
+    "@esy-ocaml/reason": "link:./reason",
+    "@esy-ocaml/merlin": "*",
+    "ocaml": "~4.6.0"
+  }
+}
